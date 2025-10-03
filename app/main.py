@@ -1,6 +1,6 @@
 # IMPORT
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from qdrant_client import QdrantClient
 from qdrant_client.models import PointStruct
 from langchain_qdrant import QdrantVectorStore
@@ -81,7 +81,7 @@ def format_docs_for_prompt(docs):
     formatted = []
     for d in docs:
         meta = d.metadata
-        title = meta.get("tvshow_title", "Не указано")
+        title = meta.get("title", "Не указано")
         url = meta.get("page_url", "N/A")
         desc = d.page_content[:300].replace("\n", " ")
         formatted.append(f"📺 {title}\n🔗 {url}\n📄 {desc}...")
@@ -93,7 +93,7 @@ def format_docs_for_prompt(docs):
 def show_results(docs):
     for i, d in enumerate(docs, 1):
         meta = d.metadata
-        title = meta.get("title", "Не указано")
+        title = meta.get("title", "")
         url = meta.get("page_url", "#")
         img = meta.get("image_url", "")
         desc = d.page_content[:500] + "..."
