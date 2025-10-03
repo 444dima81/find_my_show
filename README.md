@@ -6,7 +6,7 @@
 * Дмитрий Кошелев
 
   
-### [Сайт с моделью](https:/)
+### [Сайт с моделью  Дмитрия Кошелева](https://444dima81-find-my-show-appmain-dimak-8n2hxy.streamlit.app/)
 
 ## 🎬 Project: Smart Series Recommender (RAG + Qdrant)
 
