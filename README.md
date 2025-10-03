@@ -43,11 +43,12 @@ pip install -r requirements.txt
 ### 📂 Структура проекта
 ```
 find_my_show/
-├── main.py                 # Основное Streamlit-приложение  
+├── app
+|    └──  main.py           # Основное Streamlit-приложение
+|    └──   requirements.txt # Список зависимостей
 ├── rag_pipeline.py         # Логика RAG-поиска и работы с LLM  
 ├── data/                   # Исходные датасеты сериалов + Локальная база Qdrant (эмбеддинги сериалов)
-├── notebooks/              # Jupyter-ноутбуки с подготовкой данных и анализом  
-├── requirements.txt        # Список зависимостей
+├── notebooks/              # Jupyter-ноутбуки с подготовкой данных и анализом
 ├── scripts                 # Папка с python-script для парсинга
 └── README.md
 ```
