@@ -7,6 +7,7 @@
 
   
 ### [Сайт с моделью  Дмитрия Кошелева](https://444dima81-find-my-show-appmain-dimak-8n2hxy.streamlit.app/)
+### [Сайт с моделью Дарьи Спренгель] (https://findyourprefectshow.streamlit.app/)
 
 ## 🎬 Project: Smart Series Recommender (RAG + Qdrant)
 
